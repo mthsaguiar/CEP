@@ -1,0 +1,32 @@
+:root{
+    --primary-color: #FF69B4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+}
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color:#ffffff;
+    color: var(--text-color);
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    padding: 32px 64px;
+
+    border: 1px solid var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+}
