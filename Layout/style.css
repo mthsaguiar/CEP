@@ -1,5 +1,6 @@
 :root{
     --primary-color: #FF69B4;
+    --text-color: #DAA520;
 }
 *{
     margin: 0;
@@ -21,12 +22,79 @@ body {
 }
 
 form {
+
+    background: #FFF;
     width: 100%;
     max-width: 500px;
+
     padding: 32px 64px;
+    margin: 32px auto;
 
     border: 1px solid var(--primary-color);
-
     display: flex;
     flex-direction: column;
+}
+
+form h2{
+    margin: 15px auto;
+}
+
+div.produto {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label.produtoLabel{
+
+    font-size: 1.2rem;
+    color: var(--primary-color)
+}
+
+input,
+button{
+
+    /*reset appearance*/
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input.amount{
+    margin-left: 5px;
+    border-radius: 2px;
+    max-width: 5%;
+    min-width: 15px;
+    border: 1px solid var(--primary-color)
+}
+
+button{
+    margin-left: 10px;
+    border-radius: 2px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color)
+}
+
+div.cep{
+    margin-top: 25px;
+}
+
+input.cep{
+    margin-left: 10px;
+    border-radius: 2px;
+    max-width: 20%;
+    min-width: 70px;
+    border: 1px solid #DAA520;
+}
+
+div.cep div.aux{
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+button.calcFrete{
+    margin-left: 10px;
+    border-radius: 2px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color)
 }
