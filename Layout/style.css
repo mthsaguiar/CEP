@@ -58,9 +58,12 @@ button{
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+    outline: none;
 }
 
 input.amount{
+    position: absolute;
+    right: 54%;
     margin-left: 5px;
     border-radius: 2px;
     max-width: 5%;
@@ -68,11 +71,21 @@ input.amount{
     border: 1px solid var(--primary-color)
 }
 
-button{
+div.produto button.plus{
+    position: absolute;
+    right: 65%;
+    width: 15px;
     margin-left: 10px;
     border-radius: 2px;
     border: 1px solid var(--primary-color);
     color: var(--primary-color)
+}
+div.produto button.plus:active{
+    margin-left: 10px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #FFF
 }
 
 div.cep{
@@ -87,14 +100,29 @@ input.cep{
     border: 1px solid #DAA520;
 }
 
-div.cep div.aux{
-    box-sizing: border-box;
-    flex-direction: column;
-}
 
-button.calcFrete{
-    margin-left: 10px;
+.calcFrete{
+    padding: 5px 8px;
+    margin-top: 10px;
     border-radius: 2px;
     border: 1px solid var(--primary-color);
-    color: var(--primary-color)
+    color: #DAA520;
+    border: 1px solid #DAA520;
+}
+
+.calcFrete:hover:active:focus {
+    border: none;
+    color: #ffffff;
+    background-color: #DAA520;
+}
+
+@media (min-width: 450px){
+
+    div.produto button.plus{
+        right: 80%;
+    }
+    input.amount{
+        right: 72%;
+    }
+    
 }
