@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
 
     <script src="./script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 
 </head>
 <body>
@@ -16,17 +18,19 @@
         <h2>Calcular Frete</h2>
         <div class="produto">
             <label class="produtoLabel">Tiara</label>
-            <button class="plus">+</button>
-            <input class="amount" type="text" name="amount" readonly="readonly">
+            <button onclick="subAmountTiara()"class="minus">-</button>
+            <button onclick="addAmountTiara()"class="plus">+</button>
+            <input id="product1"class="amount" type="text" name="amount" readonly="readonly">
         </div>
         <div class="produto">
             <label class="produtoLabel">Biju</label>
-            <button class="plus">+</button>
-            <input class="amount" type="text" name="amount" readonly="readonly">
+            <button onclick="subAmountBiju()" class="minus">-</button>
+            <button onclick="addAmountBiju()"class="plus">+</button>
+            <input id="product2"class="amount" type="text" name="amount" readonly="readonly">
         </div>
         <div class="cep">
             <label class="cepLabel">CEP</label>
-            <input class="cep" type="text" name="cep">
+            <input id="inputCepId" class="cepInput" type="text" name="cep">
         </div>
         
         <button class="calcFrete">Calcular Frete</button>

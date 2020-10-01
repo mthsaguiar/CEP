@@ -23,7 +23,7 @@ soap.createClient(url, (err, client) => {
             if(err){
                 console.log(err)
             }else{
-                console.log(resp.CalcPrecoPrazoResult.Servicos.cServico[0].Valor)
+                console.log(resp.CalcPrecoPrazoResult.Servicos)
             }
         })
     }

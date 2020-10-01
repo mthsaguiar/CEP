@@ -63,17 +63,28 @@ button{
 
 input.amount{
     position: absolute;
-    right: 54%;
+    right: 47%;
+    padding-left: 4px;
     margin-left: 5px;
     border-radius: 2px;
     max-width: 5%;
     min-width: 15px;
-    border: 1px solid var(--primary-color)
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color)
 }
 
 div.produto button.plus{
     position: absolute;
-    right: 65%;
+    right: 57%;
+    width: 15px;
+    margin-left: 10px;
+    border-radius: 2px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color)
+}
+div.produto button.minus{
+    position: absolute;
+    right: 67%;
     width: 15px;
     margin-left: 10px;
     border-radius: 2px;
@@ -87,17 +98,26 @@ div.produto button.plus:active{
     border: none;
     color: #FFF
 }
+div.produto button.minus:active{
+    margin-left: 10px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #FFF
+}
 
 div.cep{
     margin-top: 25px;
 }
 
-input.cep{
+input.cepInput{
+    padding-left: 3px;
     margin-left: 10px;
     border-radius: 2px;
     max-width: 20%;
     min-width: 70px;
     border: 1px solid #DAA520;
+    color: #B8860B;
 }
 
 
@@ -119,10 +139,13 @@ input.cep{
 @media (min-width: 450px){
 
     div.produto button.plus{
-        right: 80%;
+        right: 71%;
+    }
+    div.produto button.minus{
+        right: 77%;
     }
     input.amount{
-        right: 72%;
+        right: 65%;
     }
     
 }
