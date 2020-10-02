@@ -36,8 +36,9 @@ function subAmountBiju(){
     }
 }
 
-console.log(document.getElementById("inputCepId").value);
-
+function calcFrete(){
+    console.log(document.getElementById("inputCepId").value);
+}
 
 document.querySelector("form")
 .addEventListener("submit", e => {
