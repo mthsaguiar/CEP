@@ -38,6 +38,8 @@ function subAmountBiju(){
 
 function calcFrete(){
     console.log(document.getElementById("inputCepId").value);
+    var cepValue = document.getElementById("inputCepId").value;
+    return cepValue;
 }
 
 document.querySelector("form")
