@@ -5,6 +5,9 @@ var countBiju = 0;
 var currentAmountTiara = "";
 var currentAmountBiju = "";
 
+
+
+// functions to manipulate the amount products inputs
 function addAmountTiara(){
     countTiara++;
     currentAmountTiara = countTiara.toString()
@@ -20,7 +23,6 @@ function subAmountTiara(){
     alert("A quantidade não pode ser menor que zero!")
     }
 }
-
 function addAmountBiju(){
     countBiju++;
     currentAmountBiju = countBiju.toString()
@@ -36,9 +38,12 @@ function subAmountBiju(){
     }
 }
 
-function calcFrete(){
-    console.log(document.getElementById("inputCepId").value);
+var codigo1 = {
+    "nome":"testeObjeto",
+    "id":"001obj"
 }
+
+//document.getElementById("inputCepId").value;
 
 document.querySelector("form")
 .addEventListener("submit", e => {
@@ -47,3 +52,5 @@ document.querySelector("form")
     // para evitar o envio do formulário.
     e.preventDefault();
 });
+
+module.exports = { codigo1 } ;
