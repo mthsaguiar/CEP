@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "consumo de api para calculo de frete",
   "main": "index.js",
-  "type":"module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +11,4 @@
   "dependencies": {
     "soap": "^0.33.0"
   }
-
-  
 }

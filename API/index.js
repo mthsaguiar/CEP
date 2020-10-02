@@ -1,12 +1,3 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-
-codigo1 = require('../Layout/script.js');
-
-objeto.name = "test";
-
-console.log(objeto);
-
 const soap = require('soap')
 
 const url = 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx?wsdl'
@@ -34,7 +25,6 @@ soap.createClient(url, (err, client) => {
             }else{
                 console.log(resp.CalcPrecoPrazoResult.Servicos)
             }
-            
         })
     }
 
